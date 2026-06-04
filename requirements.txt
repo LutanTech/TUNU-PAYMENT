@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Mail
+python-dotenv
+requests
+Werkzeug
+PyMySQL
+cryptography
+gunicorn
