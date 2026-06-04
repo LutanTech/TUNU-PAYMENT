@@ -8,6 +8,8 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 
+from flask_cors import CORS
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -31,6 +33,7 @@ BASE_URL = (
     else "https://api.safaricom.co.ke"
 )
 
+CORS(app)
 
 class Payment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
